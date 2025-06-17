@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 import { ExternalLink, Globe, Calendar, MapPin, Code, Palette } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
@@ -10,6 +9,7 @@ interface Project {
   category: string;
   type: string;
   location: string;
+  logo?: string;
   description?: string;
   technologies?: string[];
   completedDate?: string;
@@ -137,17 +137,29 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       <CardContent className="p-6">
         <div className="flex items-start justify-between mb-4">
           <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-2 mb-2">
-              <div className="text-mdm-gold">
-                {getCategoryIcon()}
+            <div className="flex items-center gap-3 mb-3">
+              {project.logo ? (
+                <div className="w-12 h-12 flex items-center justify-center bg-gray-50 rounded-lg p-2">
+                  <img 
+                    src={project.logo} 
+                    alt={project.name} 
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              ) : (
+                <div className="text-mdm-gold">
+                  {getCategoryIcon()}
+                </div>
+              )}
+              <div className="flex-1 min-w-0">
+                <h3 className="text-lg font-bold text-mdm-black font-satoshi truncate">
+                  {project.name}
+                </h3>
+                <p className="text-mdm-gold font-satoshi font-semibold text-sm">
+                  {project.type}
+                </p>
               </div>
-              <h3 className="text-lg font-bold text-mdm-black font-satoshi truncate">
-                {project.name}
-              </h3>
             </div>
-            <p className="text-mdm-gold font-satoshi font-semibold text-sm mb-1">
-              {project.type}
-            </p>
             <div className="flex items-center gap-1 text-gray-500 font-satoshi text-sm mb-2">
               <MapPin className="w-3 h-3" />
               {project.location}

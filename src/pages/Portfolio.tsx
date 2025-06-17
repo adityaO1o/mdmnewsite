@@ -22,6 +22,7 @@ const Portfolio = () => {
       category: 'web', 
       type: 'Tech Platform', 
       location: 'India',
+      logo: '/lovable-uploads/2bcbee51-7e23-4822-b52a-eec72bab6d26.png',
       description: 'A comprehensive technology platform providing innovative solutions for modern businesses.',
       technologies: ['React', 'Node.js', 'MongoDB', 'AWS'],
       completedDate: '2024',
@@ -46,7 +47,7 @@ const Portfolio = () => {
     { name: 'Sprizzy', url: 'sprizzy.com', category: 'web', type: 'Marketing', location: 'India' },
     { name: 'Vidya Sarthi', url: 'vidyasarthi.com', category: 'web', type: 'Education', location: 'India' },
     { name: 'Ideas Hacks', url: 'ideashacks.com', category: 'web', type: 'Business', location: 'India' },
-    { name: 'Plus27 Digital', url: 'plus27digital.com', category: 'web', type: 'Marketing', location: 'South Africa' },
+    { name: 'Plus27 Digital', url: 'plus27digital.com', category: 'web', type: 'Marketing', location: 'South Africa', logo: '/lovable-uploads/06bcca0f-0db3-4514-ab80-7851ec7bd639.png' },
     { name: 'Jain Group', url: 'jaingroup.online', category: 'web', type: 'Real Estate', location: 'India' },
     { name: 'Dayal Automotive', url: 'dayalautomotive.com', category: 'web', type: 'Automobile', location: 'India' },
     { name: 'Innerspace Inc', url: 'innerspaceinc.in', category: 'web', type: 'Real Estate', location: 'India' },
@@ -69,11 +70,11 @@ const Portfolio = () => {
       challenges: 'Implemented complex inventory management system with real-time stock updates.',
       clientTestimonial: 'Incredible e-commerce solution that boosted our online sales significantly!'
     },
-    { name: 'Beast Nutrition', url: 'beastnutrition.store', category: 'ecommerce', type: 'Supplements', location: 'India' },
+    { name: 'Beast Nutrition', url: 'beastnutrition.store', category: 'ecommerce', type: 'Supplements', location: 'India', logo: '/lovable-uploads/25276a12-b984-4a73-a1d3-f0c9ac561f5b.png' },
     { name: 'Monarque Paris', url: 'monarqueparis.com', category: 'ecommerce', type: 'Fashion', location: 'India' },
     { name: 'Ruhi Tumbi', url: 'ruhitumbi.com', category: 'ecommerce', type: 'Fashion', location: 'India' },
-    { name: 'The Manga Store', url: 'themangastore.in', category: 'ecommerce', type: 'Street Fashion', location: 'India' },
-    { name: 'The Clinq Pharmaceuticals', url: 'theclinqpharmaceuticals.in', category: 'ecommerce', type: 'Pharmaceutical', location: 'India' },
+    { name: 'The Manga Store', url: 'themangastore.in', category: 'ecommerce', type: 'Street Fashion', location: 'India', logo: '/lovable-uploads/ed95404d-c6b4-4622-8977-fad1798e8720.png' },
+    { name: 'The Clinq Pharmaceuticals', url: 'theclinqpharmaceuticals.in', category: 'ecommerce', type: 'Pharmaceutical', location: 'India', logo: '/lovable-uploads/cb8507d1-7b54-4610-ae6e-3929bda45285.png' },
     { name: 'ZX3', url: 'zx3.co.in', category: 'ecommerce', type: 'Fashion', location: 'India' },
 
     // Custom-Coded Projects
@@ -90,7 +91,7 @@ const Portfolio = () => {
       challenges: 'Built a highly scalable system handling millions of products and thousands of concurrent users.',
       clientTestimonial: 'Exceptional technical delivery that transformed our marketplace platform completely.'
     },
-    { name: 'Thrival Learning', url: 'thrival-learning', category: 'custom', type: 'EdTech', location: 'India', description: 'Next.js, React, Vercel' },
+    { name: 'Thrival Learning', url: 'thrival-learning', category: 'custom', type: 'EdTech', location: 'India', description: 'Next.js, React, Vercel', logo: '/lovable-uploads/2bcbee51-7e23-4822-b52a-eec72bab6d26.png' },
     { name: 'The Rubber Company', url: 'therubbercompany.com', category: 'custom', type: 'Industrial', location: 'India', description: 'WordPress, WooCommerce' },
 
     // International Marketing Projects
@@ -100,6 +101,7 @@ const Portfolio = () => {
       category: 'marketing', 
       type: 'Racing', 
       location: 'South Africa', 
+      logo: '/uploads/Lindenberg Racing.webp',
       description: 'Comprehensive digital marketing strategy for professional racing team.',
       technologies: ['Social Media Marketing', 'Content Strategy', 'Brand Design', 'Video Production'],
       completedDate: '2024',
@@ -108,8 +110,8 @@ const Portfolio = () => {
       clientTestimonial: 'MDM transformed our digital presence and helped us reach a global audience!'
     },
     { name: 'Combine Air Training', url: '#', category: 'marketing', type: 'Fitness Training', location: 'Australia', description: 'Website revamp, digital marketing, brand positioning' },
-    { name: 'Myco Med', url: '#', category: 'marketing', type: 'Medical', location: 'South Africa', description: 'Social, website, product-focused reels' },
-    { name: 'Lavender Farm Guest House', url: '#', category: 'marketing', type: 'Hospitality', location: 'South Africa', description: 'Social media, content, SEO' }
+    { name: 'Myco Med', url: '#', category: 'marketing', type: 'Medical', location: 'South Africa', description: 'Social, website, product-focused reels', logo: '/lovable-uploads/17d43288-1e3a-45b5-913f-752f3e7c1a77.png' },
+    { name: 'Lavender Farm Guest House', url: '#', category: 'marketing', type: 'Hospitality', location: 'South Africa', description: 'Social media, content, SEO', logo: '/lovable-uploads/404b8807-35e1-40a3-9f5e-eeb8cad57b45.png' }
   ];
 
   const filteredProjects = projects.filter(project => 

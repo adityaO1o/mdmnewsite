@@ -1,4 +1,3 @@
-
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import ClientModal from '@/components/ClientModal';
@@ -23,7 +22,7 @@ const Clients = () => {
   const clientsData = {
     'VNETIX': {
       name: 'VNETIX',
-      logo: '🌐',
+      logo: '/lovable-uploads/2bcbee51-7e23-4822-b52a-eec72bab6d26.png',
       industry: 'Technology',
       location: 'Delhi, India',
       services: ['Web Development', 'Digital Marketing', 'SEO'],
@@ -70,7 +69,7 @@ const Clients = () => {
     },
     'Beast Nutrition': {
       name: 'Beast Nutrition',
-      logo: '🥤',
+      logo: '/lovable-uploads/25276a12-b984-4a73-a1d3-f0c9ac561f5b.png',
       industry: 'Supplements',
       location: 'Gurgaon, India',
       services: ['Complete Marketing Management', 'Social Media', 'Performance Marketing', 'Sales Funnel Optimization'],
@@ -87,23 +86,45 @@ const Clients = () => {
       services: ['Meta Ads', 'Social Media', 'Content', 'Branding'],
       description: 'Boutique travel agency specializing in customized travel experiences and adventure tours.',
       year: '2023',
-      results: '₹5 Crores sales in 4 months',
-      testimonial: 'Incredible ROI! MDM helped us achieve ₹5 Crores in sales within just 4 months.',
+      results: '₹25 Lakhs sales in 4 months',
+      testimonial: 'Incredible ROI! MDM helped us achieve ₹25 Lakhs in sales within just 4 months.',
       website: 'https://journeymakers.in'
+    },
+    'The Clinq Pharmaceuticals': {
+      name: 'The Clinq Pharmaceuticals',
+      logo: '/lovable-uploads/cb8507d1-7b54-4610-ae6e-3929bda45285.png',
+      industry: 'Pharmaceutical',
+      location: 'Mumbai, India',
+      services: ['Digital Marketing', 'Brand Strategy', 'Content Creation'],
+      description: 'Leading pharmaceutical company focused on innovative healthcare solutions.',
+      year: '2023',
+      results: '50% increase in brand awareness',
+      testimonial: 'Outstanding digital marketing strategy that significantly boosted our brand presence.'
+    },
+    'The Manga Store': {
+      name: 'The Manga Store',
+      logo: '/lovable-uploads/ed95404d-c6b4-4622-8977-fad1798e8720.png',
+      industry: 'Fashion',
+      location: 'Delhi, India',
+      services: ['E-commerce Development', 'Social Media Marketing'],
+      description: 'Trendy streetwear fashion brand catering to young demographics.',
+      year: '2023',
+      results: '200% increase in online sales',
+      testimonial: 'MDM created an amazing e-commerce platform that boosted our sales dramatically!'
     }
   };
 
   const domesticClients = [
     'VNETIX', 'Dharma Engineers', 'The Fitness Lounge', 'Dopamine Gym', 'AV Industries',
     'Iron MB', 'AS Precision Components', 'Guru Harkrishan Hydraulics', 'Dayal', 'Vidflyy',
-    'Beast Nutrition', 'Manthan Fitness Lounge', 'DPS Chhatarpur', 'Journey Makers'
+    'Beast Nutrition', 'Manthan Fitness Lounge', 'DPS Chhatarpur', 'Journey Makers', 'The Clinq Pharmaceuticals', 'The Manga Store'
   ];
 
   const internationalPartners = [
     { 
       name: 'Lindenberg Racing', 
       location: 'South Africa',
-      logo: '🏎️',
+      logo: '/uploads/Lindenberg Racing.png',
       industry: 'Motorsports',
       services: ['Brand Development', 'Digital Marketing'],
       description: 'Premier racing team in South African motorsports circuit.',
@@ -123,7 +144,7 @@ const Clients = () => {
     { 
       name: 'Myco Med', 
       location: 'South Africa',
-      logo: '🏥',
+      logo: '/lovable-uploads/17d43288-1e3a-45b5-913f-752f3e7c1a77.png',
       industry: 'Healthcare',
       services: ['Digital Presence', 'Content Strategy'],
       description: 'Medical services provider focusing on innovative healthcare solutions.',
@@ -133,7 +154,7 @@ const Clients = () => {
     { 
       name: 'Plus27 Digital', 
       location: 'Cape Town',
-      logo: '📱',
+      logo: '/lovable-uploads/06bcca0f-0db3-4514-ab80-7851ec7bd639.png',
       industry: 'Digital Agency',
       services: ['Partnership', 'Collaboration'],
       description: 'Digital marketing agency partnership for expanded service offerings.',
@@ -143,7 +164,7 @@ const Clients = () => {
     { 
       name: 'Lavender Farm Guest House', 
       location: 'Franschhoek',
-      logo: '🏨',
+      logo: '/lovable-uploads/404b8807-35e1-40a3-9f5e-eeb8cad57b45.png',
       industry: 'Hospitality',
       services: ['Booking System', 'Digital Marketing'],
       description: 'Boutique guest house in the heart of South African wine country.',
@@ -186,7 +207,7 @@ const Clients = () => {
       name: 'Journey Makers',
       industry: 'Travel Agency',
       services: 'Meta Ads, social media, content, branding',
-      description: '₹5 Crores sales in 4 months through strategic digital marketing campaigns',
+      description: '₹25 Lakhs sales in 4 months through strategic digital marketing campaigns',
       icon: '🗺️',
       highlight: true
     }
@@ -396,7 +417,7 @@ const Clients = () => {
                   <Award className="w-3 h-3 text-mdm-black" />
                 </div>
               </div>
-              <div className="text-4xl sm:text-5xl font-bold text-mdm-black font-satoshi mb-3 bg-gradient-to-r from-mdm-black to-mdm-dark-gold bg-clip-text text-transparent">₹5Cr+</div>
+              <div className="text-4xl sm:text-5xl font-bold text-mdm-black font-satoshi mb-3 bg-gradient-to-r from-mdm-black to-mdm-dark-gold bg-clip-text text-transparent">₹25L+</div>
               <div className="text-base sm:text-lg text-gray-600 font-satoshi font-medium">Revenue Generated</div>
               <div className="text-sm text-mdm-gold mt-1">Client Success</div>
             </div>
@@ -429,8 +450,20 @@ const Clients = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-mdm-gold/10 to-mdm-dark-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative z-10">
-                  <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
-                    {clientsData[client]?.logo || '🏢'}
+                  <div className="mb-3 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center h-12">
+                    {clientsData[client]?.logo ? (
+                      clientsData[client].logo.startsWith('/lovable-uploads/') ? (
+                        <img 
+                          src={clientsData[client].logo} 
+                          alt={client} 
+                          className="max-h-12 max-w-20 object-contain"
+                        />
+                      ) : (
+                        <div className="text-4xl">{clientsData[client].logo}</div>
+                      )
+                    ) : (
+                      <div className="text-4xl">🏢</div>
+                    )}
                   </div>
                   <div className="text-mdm-black font-satoshi font-bold text-sm sm:text-base mb-1 group-hover:text-mdm-dark-gold transition-colors duration-300">
                     {client}
@@ -476,8 +509,16 @@ const Clients = () => {
                     <Globe className="w-4 h-4 text-mdm-gold" />
                   </div>
                   
-                  <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                    {partner.logo}
+                  <div className="mb-4 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center h-16">
+                    {partner.logo.startsWith('/lovable-uploads/') ? (
+                      <img 
+                        src={partner.logo} 
+                        alt={partner.name} 
+                        className="max-h-16 max-w-24 object-contain"
+                      />
+                    ) : (
+                      <div className="text-5xl">{partner.logo}</div>
+                    )}
                   </div>
                   
                   <h3 className="text-xl sm:text-2xl font-bold text-mdm-black font-satoshi mb-3 group-hover:text-mdm-dark-gold transition-colors duration-300">
